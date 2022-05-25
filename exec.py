@@ -21,18 +21,21 @@ def youtube_fn():
 
         re_enter = "python3 exec.py"
         os.system(re_enter)
+        
     elif file_format == 'mp4':
         cmd = "youtube-dl " + url
         os.system(cmd)
 
         re_enter = "python3 exec.py"
         os.system(re_enter)
+
     elif file_format == 'mkv':
         cmd = "youtube-dl " + url
         os.system(cmd)
 
         re_enter = "python3 exec.py"
         os.system(re_enter)
+
     elif file_format == "check":
         cmd = "youtube-dl -F " + url
         os.system(cmd)
@@ -41,6 +44,7 @@ def youtube_fn():
         format_code = input("Insert Format Code (number): ")
         cmd_format_code = "youtube-dl -f " + format_code + " " + url
         os.system(cmd_format_code)
+
     else:
         print("No command found!")
         re_enter = "python3 exec.py"
