@@ -5,6 +5,9 @@ ans=True
 def scroll_lock():
    cmd = "xmodmap -e 'add mod3 = Scroll_Lock'"
    os.system(cmd)
+   
+   re_enter = "python3 exec.py"
+   os.system(re_enter)    
 
 def my_quit_fn():
    raise SystemExit
@@ -15,12 +18,21 @@ def youtube_fn():
     if file_format == 'mp3':
         cmd = "youtube-dl -x --audio-format mp3 " + url
         os.system(cmd)
+
+        re_enter = "python3 exec.py"
+        os.system(re_enter)
     elif file_format == 'mp4':
         cmd = "youtube-dl " + url
         os.system(cmd)
+
+        re_enter = "python3 exec.py"
+        os.system(re_enter)
     elif file_format == 'mkv':
         cmd = "youtube-dl " + url
         os.system(cmd)
+
+        re_enter = "python3 exec.py"
+        os.system(re_enter)
     elif file_format == "check":
         cmd = "youtube-dl -F " + url
         os.system(cmd)
@@ -31,6 +43,8 @@ def youtube_fn():
         os.system(cmd_format_code)
     else:
         print("No command found!")
+        re_enter = "python3 exec.py"
+        os.system(re_enter)
 
 def invalid():
    print ("INVALID CHOICE!")
