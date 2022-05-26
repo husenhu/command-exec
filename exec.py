@@ -50,6 +50,10 @@ def youtube_fn():
         re_enter = "python3 exec.py"
         os.system(re_enter)
 
+def update_fedora_fn():
+    cmd = "sudo dnf update -y"
+    os.system(cmd)
+
 def invalid():
    print ("INVALID CHOICE!")
 
@@ -60,6 +64,7 @@ print ("--------------------------")
 menu = {
         "1":("Activated Scroll Lock",scroll_lock),
         "2":("Download Youtube Video", youtube_fn),
+        "3":("Update Fedora", update_fedora_fn),
         "9":("Quit",my_quit_fn)
        }
 
