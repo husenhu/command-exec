@@ -7,7 +7,7 @@ def clear_screen_fn():
 	os.system(cmd)
 
 def download_youtube_fn():
-	url = input("Inser URL: ")
+	url = input("Insert URL: ")
 	file_format = input("Format MP3/MP4/MKV/check: ")
 	
 	if file_format == 'mp3':
